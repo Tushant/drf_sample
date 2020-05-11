@@ -20,13 +20,17 @@
     python manage.py createsuperuser (if want to create an admin account)
     python manage.py runserver
 
+# To Run the tests
+
+`python manage.py test notes.tests`
+
 # API Endpoints
 
     api/v1/notes/ - list all the notes
     api/v1/notes/ - create a note
-    api/v1/notes/:noteId - retrieve a specific note
-    api/v1/notes/:noteId - update a specific note
-    api/v1/notes/:noteId - delete a specific note
+    api/v1/notes/:noteId/ - retrieve a specific note
+    api/v1/notes/:noteId/ - update a specific note
+    api/v1/notes/:noteId/ - delete a specific note
 
 ### post a note
 
