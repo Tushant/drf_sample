@@ -16,7 +16,7 @@
     pip install -r requirements/local.txt
     createdb <database_name> -U <username> --password <password> (e.g createdb drf_sample_dev -U tushant --password tushant)
     export DJANGO_READ_DOT_ENV_FILE=True (this will read all variables from .env)
-    change .env variable
+    copy .env.sample to .env
         - DEBUG=True
         - DATABASE_URL=psql://<username>:<password>@localhost:5432/<database_name>
     python manage.py migrate
