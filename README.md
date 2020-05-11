@@ -10,7 +10,7 @@
     git clone git@github.com:Tushant/drf_sample.git
     cd drf_sample
     mkvirtualenv <virtual_environment_name>
-    pip install -r requirements.txt
+    pip install -r requirements/local.txt
     createdb <database_name> -U <username> --password <password> (e.g createdb drf_sample_dev -U tushant --password tushant)
     export DJANGO_READ_DOT_ENV_FILE=True (this will read all variables from .env)
     python manage.py migrate

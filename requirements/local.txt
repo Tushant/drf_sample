@@ -1,0 +1,4 @@
+-r ./base.txt
+
+psycopg2-binary==2.8.5
+pylint-django==2.0.15
