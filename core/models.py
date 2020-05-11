@@ -2,20 +2,11 @@ import datetime
 
 from django.db import models
 
-class PublishedQuerySet(models.QuerySet):
-    def published(self):
-        today = datetime.date.today()
-        return self.filter(
-            Q(publication_date__lte=today) | Q(publication_date__isnull=True),
-            is_published=True,
-        )
-
+# will later have queryset to filter published notes
 
 class PublishableModel(models.Model):
     publication_date = models.DateField(blank=True, null=True)
     is_published = models.BooleanField(default=False)
-
-    objects = PublishedQuerySet.as_manager()
 
     class Meta:
         abstract = True
