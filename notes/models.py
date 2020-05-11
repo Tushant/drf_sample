@@ -7,8 +7,8 @@ class Note(PublishableModel, TimeStampModel):
     description = models.TextField(null=True, blank=True)
 
     class Meta:
-        verbose_name = 'Note',
-        verbose_name_plural = 'Notes',
+        verbose_name = 'Note'
+        verbose_name_plural = 'Notes'
     
     def __str__(self):
         return str(self.pk)
