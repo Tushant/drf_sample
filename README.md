@@ -1,3 +1,6 @@
+# Production
+[SimpleNoteAPI!](https://simplenoteapi.herokuapp.com/api/v1/notes/)
+
 # Technology used
 
     python3
@@ -28,18 +31,25 @@
 ### post a note
 
 ` curl -X POST -d "title=Deep Dive Django&description=I am loving django&is_published=True" http://127.0.0.1:8000/api/v1/notes/ `
+` curl -X POST -d "title=Deep Dive Django&description=I am loving django&is_published=True" https://simplenoteapi.herokuapp.com/api/v1/notes/ `
 
 ### list all the notes
 ` curl -X GET http://127.0.0.1:8000/api/v1/notes/ `
+`curl -X GET https://simplenoteapi.herokuapp.com/api/v1/notes/`
+
 
 ### get particular note
 
 ` curl -X GET http://127.0.0.1:8000/api/v1/notes/1/ `
+`curl -X GET https://simplenoteapi.herokuapp.com/api/v1/notes/1/`
+
 
 ### update particular note
 
 ` curl -X PUT -d "title=Deep Dive Django&description=Django is awesome&is_published=True" http://127.0.0.1:8000/api/v1/notes/1 `
+` curl -X PUT -d "title=Deep Dive Django&description=Django is awesome&is_published=True" https://simplenoteapi.herokuapp.com/api/v1/notes/1/ `
 
 ### delete note
 
 ` curl -X DELETE http://127.0.0.1:8000/api/v1/notes/1/ `
+` curl -X DELETE https://simplenoteapi.herokuapp.com/api/v1/notes/1/ `
