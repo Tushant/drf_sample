@@ -25,10 +25,6 @@
     api/v1/notes/:noteId - update a specific note
     api/v1/notes/:noteId - delete a specific note
 
-` curl -X POST -d "title=Deep Dive Django&description=I am loving django&is_published=True" http://127.0.0.1:8000/api/v1/notes/ `
-
-#Testing api using curl
-
 ### post a note
 
 ` curl -X POST -d "title=Deep Dive Django&description=I am loving django&is_published=True" http://127.0.0.1:8000/api/v1/notes/ `
